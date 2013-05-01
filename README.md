@@ -15,18 +15,43 @@ How To Use It
 
 API Endpoint
 ============
-Getting the recent news.
+Getting the recent post.
 ------------------------
 
 url: http://yourdomain.com/api/index.php/recent/:paged
+
 example: http://yourdomain.com/api/index.php/recent/1
+
 method: GET
+
 param: :paged for showing the content in "x" page.
 
 Getting the category.
 ---------------------
 url: http://yourdomain.com/api/index.php/category
+
 method: GET
+
+param: none
+
+Getting the post detail.
+------------------------
+url: http://yourdomain.com/api/index.php/post/:id
+
+example: http://yourdomain.com/api/index.php/post/403
+
+method: GET
+
+param: none
+
+Getting the post by category.
+-----------------------------
+url: http://yourdomain.com/api/index.php/category/:id
+
+example: http://yourdomain.com/api/index.php/category/2
+
+method: GET
+
 param: none
 
 License

@@ -42,7 +42,7 @@ example: http://yourdomain.com/api/index.php/post/403
 
 method: GET
 
-param: none
+param: :id is a post id
 
 Getting the post by category.
 -----------------------------
@@ -52,7 +52,7 @@ example: http://yourdomain.com/api/index.php/category/2
 
 method: GET
 
-param: none
+param: :id is a category id
 
 License
 =======

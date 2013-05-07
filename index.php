@@ -46,6 +46,7 @@ $app->get('/recent/:paged', function($paged) {
 			$response['posts'][$i]['post_author']    = get_the_author();
 			$response['posts'][$i]['post_date']      = get_the_date();
 			$response['posts'][$i]['post_thumbnail'] = get_the_post_thumbnail(get_the_ID(), array(140, 80));
+			$response['posts'][$i]['post_permalink'] = get_permalink();
 		}
 
 		echo json_encode($response);
@@ -159,6 +160,7 @@ $app->get('/category/:id', function($id) {
 			$response['posts'][$i]['post_author']    = get_the_author();
 			$response['posts'][$i]['post_date']      = get_the_date();
 			$response['posts'][$i]['post_thumbnail'] = get_the_post_thumbnail(get_the_ID(), array(140, 80));
+			$response['posts'][$i]['post_permalink'] = get_permalink();
 		}
 
 		echo json_encode($response, JSON_HEX_TAG|JSON_HEX_APOS|JSON_HEX_QUOT|JSON_HEX_AMP);

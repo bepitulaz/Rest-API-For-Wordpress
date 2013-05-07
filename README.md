@@ -56,4 +56,4 @@ param: :id is a category id
 
 License
 =======
-You can use it for any project and any purpose :)
+This project is licensed under the MIT license.
